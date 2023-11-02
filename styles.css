@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8e9eab, #eef2f3); /* Background Gradient */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#content-wrapper {
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#bulbs-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bulb {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bulb.on {
+    background-color: yellow;
+}
+
+#success-message {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid green;
+    display: inline-block;
+    background-color: #e6ffe6; /* light green */
+}
+
+#resetButton {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #006600; /* darker green */
+}
+
+.section {
+    margin-top: 30px;
+    text-align: left;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greedy Light Bulb Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="content-wrapper">
+    <h1>The Light Bulb Problem</h1>
+    
+    <!-- Dropdown for Bulb Selection -->
+    <div class="section">
+        <label for="bulbCount">Select number of bulbs:</label>
+        <select id="bulbCount">
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+
+    <!-- Game Section -->
+    <div id="bulbs-container"></div>
+    <p><strong>Switch Presses:</strong> <span id="switchPresses">0</span></p>
+    <div id="success-message" style="display: none;">
+        <p>Congratulations! All bulbs are on!</p>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <!-- Problem Statement Section -->
+    <div class="section">
+        <h2>Problem Statement</h2>
+        <p>N light bulbs are connected by a wire. Each bulb has a switch associated with it. However, due to faulty wiring, a switch also changes the state of all the bulbs to the right of the current bulb. The challenge is to turn on all the bulbs with the minimum number of switch presses.</p>
+    </div>
+
+    <!-- Algorithm Explanation Section -->
+    <div class="section">
+        <h2>Greedy Algorithm Explanation</h2>
+        <p>Greedy algorithms aim to make the optimal choice at that given moment. In this game, at each step, we select the leftmost bulb that's off and toggle its switch. This approach ensures that we're making a local optimal choice (turning the leftmost off-bulb on) with the hope of leading to a global optimal solution (turning all bulbs on in the minimum number of moves).</p>
+    </div>
+
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
